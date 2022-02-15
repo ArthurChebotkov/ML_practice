@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Absolute magnitude(Mv) <= 8.174\nentropy = 2.581\nsamples = 168\nvalue = [28, 27, 29, 25, 32, 27]", fillcolor="#fcfbfe"] ;
+1 [label="Absolute magnitude(Mv) <= -5.16\nentropy = 1.581\nsamples = 88\nvalue = [0, 27, 29, 0, 32, 0]", fillcolor="#f9f5fe"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Absolute magnitude(Mv) <= -7.515\nentropy = 0.995\nsamples = 59\nvalue = [0, 27, 0, 0, 32, 0]", fillcolor="#ebe0fb"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 27\nvalue = [0, 27, 0, 0, 0, 0]", fillcolor="#9de539"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 32\nvalue = [0, 0, 0, 0, 32, 0]", fillcolor="#8139e5"] ;
+2 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 29\nvalue = [0, 0, 29, 0, 0, 0]", fillcolor="#39e581"] ;
+1 -> 5 ;
+6 [label="M <= 0.5\nentropy = 1.583\nsamples = 80\nvalue = [28, 0, 0, 25, 0, 27]", fillcolor="#fffdfb"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="entropy = 0.0\nsamples = 28\nvalue = [28, 0, 0, 0, 0, 0]", fillcolor="#e58139"] ;
+6 -> 7 ;
+8 [label="Absolute magnitude(Mv) <= 15.495\nentropy = 0.999\nsamples = 52\nvalue = [0, 0, 0, 25, 0, 27]", fillcolor="#fdf0f8"] ;
+6 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 27\nvalue = [0, 0, 0, 0, 0, 27]", fillcolor="#e5399d"] ;
+8 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 25\nvalue = [0, 0, 0, 25, 0, 0]", fillcolor="#399de5"] ;
+8 -> 10 ;
+}
